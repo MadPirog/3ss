@@ -1,0 +1,12 @@
+start
+new money number
+set money 500
+new price number
+set price 300
+
+if (money > price)  
+    log string "Денег хватает"
+else
+    log string "Денег не хватает"
+close
+finish
