@@ -1,0 +1,21 @@
+start
+log string "Путь 1 (комбинированный):"
+log string "1. AB - пешком (15 мин)"
+log string "2. BC - ожидание автобуса (10 мин)"
+log string "3. CD - пешком (20 мин)"
+new time1 number
+set time1 15 + 10 + 20
+log string "Общее время: " >> time1 >> " мин"
+
+log string "Путь 2 (пешком):"
+log string "AD - пешком (50 мин)"
+new time2 number
+set time2 50
+log string "Общее время: " >> time2 >> " мин"
+
+if (time2 > time1 )
+    log string "Рекомендуется путь 1"
+else
+    log string "Рекомендуется путь 2"
+close
+finish
